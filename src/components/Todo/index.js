@@ -28,6 +28,7 @@ export default function Todo({ name, prioriry, completed }) {
         {prioriry}
       </Tag>
       abc
+      xyz
     </Row>
   );
 }
