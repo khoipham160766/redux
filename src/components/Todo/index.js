@@ -27,6 +27,8 @@ export default function Todo({ name, prioriry, completed }) {
       <Tag color={priorityColorMapping[prioriry]} style={{ margin: 0 }}>
         {prioriry}
       </Tag>
+      abc
+      xyz
     </Row>
   );
 }
