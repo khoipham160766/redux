@@ -29,6 +29,7 @@ export default function Todo({ name, prioriry, completed }) {
       </Tag>
       abc
       xyz
+      123
     </Row>
   );
 }
