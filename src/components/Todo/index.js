@@ -1,5 +1,5 @@
 import { Row, Tag, Checkbox } from 'antd';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const priorityColorMapping = {
   High: 'red',
@@ -8,20 +8,22 @@ const priorityColorMapping = {
 };
 
 export default function Todo({ name, prioriry, completed }) {
-  const [checked, setChecked] = useState(completed);
+  const [Checked, setChecked] = useState(completed)
+  console.log(Checked)
   const toggleCheckbox = () => {
-    setChecked(!checked);
+    setChecked(!Checked);
   };
-
+// console.log(completed)
+// console.log(Checked)
   return (
     <Row
       justify='space-between'
       style={{
         marginBottom: 3,
-        ...(checked ? { opacity: 0.5, textDecoration: 'line-through' } : {}),
+        ...(Checked?{ opacity: 0.5, textDecoration: 'line-through' }:{}),
       }}
     >
-      <Checkbox checked={checked} onClick={toggleCheckbox}>
+      <Checkbox checked={Checked} onClick={toggleCheckbox}>
         {name}
       </Checkbox>
       <Tag color={priorityColorMapping[prioriry]} style={{ margin: 0 }}>
