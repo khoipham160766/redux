@@ -35,7 +35,7 @@ export default function TodoList() {
     console.log(value);
     setPriority(value);
   }
-
+  console.log(todoList)
   return (
     <Row style={{ height: 'calc(100% - 40px)' }}>
       <Col span={24} style={{ height: 'calc(100% - 40px)', overflowY: 'auto' }}>

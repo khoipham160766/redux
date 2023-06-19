@@ -1,3 +1,5 @@
+// type: tính năng
+// payload: dữ liệu
 export const addTodo = (data) =>{
     return {
     type: 'todoList/addTodo',
